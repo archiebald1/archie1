@@ -1,0 +1,82 @@
+/* Google Fonts are loaded in each HTML page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #a0c4ff;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 150vh; /* Ensure body takes up the full height of the viewport */
+}
+
+/* Background image only on the homepage */
+body.home {
+    background-image: url('c:/Users/archi/Downloads/sophies shit'); /* Update path to the correct one */
+    background-size: cover;  /* Ensure the image covers the entire body */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+/* Header */
+header {
+    background-color: #a0c4ff;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 5px solid #a0c4ff;
+}
+
+/* Navigation */
+nav {
+    background-color: #ffc6c7;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 14px 24px;
+    display: inline-block;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #a0c4ff;
+    color: #ffffff;
+}
+
+main {
+    flex: 1; /* Allows the main content to grow and push the footer to the bottom */
+}
+
+section {
+    padding: 20px 20px;
+    border-bottom: 0px solid #5f2727;
+}
+
+section:nth-child(even) {
+    background-color: #a0c4ff;
+}
+
+section:nth-child(odd) {
+    background-color: #ffc6c7;
+}
+
+h2 {
+    color: #ffffff
+    border-left: px solid #ffc6c7;
+    padding-left: 817px;
+}
+
+/* Footer */
+footer {
+    background-color: #a0c4ff;
+    color: #ffffff;  /* Ensure text is visible */
+    text-align: center;
+    padding: 20px 0;
+    border-top: 20px solid #ffc6c7;
+    font-size: 15px;
+    height: 140px; /* You can adjust the height to your liking */
+    background-image: none; /* No image for the footer */
